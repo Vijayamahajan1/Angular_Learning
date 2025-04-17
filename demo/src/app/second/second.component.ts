@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./second.component.sass', '../first/first.component.sass']
 })
 export class SecondComponent {
+   color = 'red'
+   fontSize = '30px'
 
+   isactive = true
+   notactive = true
 }

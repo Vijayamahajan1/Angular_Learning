@@ -10,5 +10,12 @@ export class ParentComponent {
 
   isTrue = false
 
-  userName : string = "Raj patil"
+  userName : string = "mumbai indians"
+
+  message: string = ''
+
+  getMsgFromChild(msg:string){
+    this.message= msg
+   }
+
 }

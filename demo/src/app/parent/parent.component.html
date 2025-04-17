@@ -9,4 +9,8 @@
 <p *ngIf="isTrue">Login Sucessfully.</p>
 <p *ngIf="!isTrue">Login unSucessfully.</p>
 
-<app-child [name]="userName"></app-child>
+<app-child [name]="userName" (sendmsgtoparent)="getMsgFromChild($event)"></app-child>
+<h1>{{message}}</h1>
+
+
+<!-- <app-child (sendmsgtoparent)="getMsgFromChild($event)"></app-child> -->
