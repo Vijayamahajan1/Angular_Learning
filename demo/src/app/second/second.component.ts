@@ -10,5 +10,5 @@ export class SecondComponent {
    fontSize = '30px'
 
    isactive = true
-   notactive = true
+   notactive = false
 }

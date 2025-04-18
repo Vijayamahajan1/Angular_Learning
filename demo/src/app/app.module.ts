@@ -10,6 +10,8 @@ import { FirstChildComponent } from './first/first-child/first-child.component';
 import { HeaderComponent } from './header/header.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './parent/child/child.component';
+import { BindingSessionComponent } from './binding-session/binding-session.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,13 @@ import { ChildComponent } from './parent/child/child.component';
     FirstChildComponent,
     HeaderComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    BindingSessionComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
