@@ -6,8 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'demo';
+  title = 'Hello';
   a="first demo."
   istrue = true
   members = ['a','b','c','d']
+
+  num1=10
 }
