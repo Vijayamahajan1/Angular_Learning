@@ -1,0 +1,44 @@
+<div class="container">
+<h1> Date pipes exmaple</h1>
+<p>short: {{today | date:'short'}}</p>
+<p>longDate: {{today | date:'long'}}</p>
+<p>normalDate: {{today}}</p>
+
+<h1> Currency pipes exmaple</h1>
+<p>India    {{number | currency:'INR'}}</p>
+<p>India    {{number | currency:'AUD'}}</p>
+
+<h1>Upper lower pipes example</h1>
+<p>Uppercase : {{toUpper | uppercase}}</p>
+<p>Lowercase : {{toUpper | lowercase}}</p>
+
+<h1>Decimal pipes example</h1>
+<p>{{number}}</p>
+<p>{{number|number:'2.2-4'}}</p>
+
+<h1>Percentage pipes example</h1>
+<p>{{number | percent:'2.0-2'}}</p>
+
+<h1>Json pipes example</h1>
+<p>{{person| json}}</p>
+
+<p>{{person.name}}- {{person.age}}</p>
+
+<h1>Angylar slice example</h1>
+<p>{{subject}}</p>
+<p>{{subject | slice:2:7}}</p>
+<p>{{subject | slice:-5:-1}}</p>
+
+
+<h1>KeyValue Example</h1>
+<ul *ngFor="let p of person | keyvalue">
+   {{p.key}} - {{p.value}}
+</ul>
+
+<h1>I18nselectPipe Example</h1>
+<p>{{gender | i18nSelect: genderMap}}</p>
+
+<button (click)="changeGender('male')">changeGender to male</button>
+<button (click)="changeGender('Female')">changeGender to Female</button>
+
+</div> 
