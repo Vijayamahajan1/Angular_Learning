@@ -20,7 +20,6 @@ import { AdditionPipe } from './customePipes/addition.pipe';
   declarations: [
     AppComponent,
     FirstComponent,
-    SecondComponent,
     DashboardComponent,
     FirstChildComponent,
     HeaderComponent,
